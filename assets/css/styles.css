@@ -332,11 +332,13 @@ img {
 }
 
 .skills__ux {
-  width: 85%;
+  width: 45%;
 }
 
 .skills__img {
   border-radius: .5rem;
+  overflow: hidden;
+  
 }
 
 /* ===== WORK =====*/
