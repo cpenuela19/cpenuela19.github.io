@@ -313,14 +313,24 @@ img {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: var(--first-color);
+  background-color: var(--first-color); /* Asegúrate de que este color se contraste con el fondo */
   height: .25rem;
   border-radius: .5rem;
   z-index: var(--z-back);
+  transition: width 0.5s ease-out; /* Añadí una transición suave para cuando cambia el ancho */
+}
+
+/* Puedes agregar diferentes colores a las barras según la habilidad si lo prefieres */
+.skills__java {
+  width: 90%; /* Ajusta este valor según el nivel de habilidad */
+}
+
+.skills__python {
+  width: 80%;
 }
 
 .skills__html {
-  width: 80%;
+  width: 70%;
 }
 
 .skills__css {
@@ -328,12 +338,9 @@ img {
 }
 
 .skills__js {
-  width: 40%;
+  width: 70%;
 }
 
-.skills__ux {
-  width: 45%;
-}
 
 .skills__img {
   border-radius: .5rem;
